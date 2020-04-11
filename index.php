@@ -5,6 +5,7 @@
 <html>
 
 <head>
+  
   <title>Accueil</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,198 +18,29 @@
   <script src="jss/uikit-icons.min.js"></script>
   <script src="js/uikit.min.js"></script>
   <script src="js/uikit-icons.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/util.js"></script>
 
   <link rel="stylesheet" href="styles/bootstrap-337.min.css">
   <link rel="stylesheet" href="icons/font-awsome/css/font-awesome.min.css">
   <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/uikit.min.css">
+  
+
+
 </head>
 
 <body>
-
-  <!-- top menu -->
-  <div id="top">
-    <div class="container">
-
-
-      <div class="col-md-6 offer">
-        <a href="#" class="btn btn-warning btn-sm"> Bienvenu chez Chalo Paradise  </a>
-        <!-- <a href="panier.html" class="btn navbar-btn btn-warning  right">
-
-          <i class="fa fa-shopping-cart"></i>
-        </a> -->
-      </div>
-
-      <div class="col-md-6 ">
-        <ul class="menu">
-
-          <li> <a href="">S'inscrire</a></li>
-          <li> <a href="">mon Compte</a></li>
-          <li> <a href="">Connection</a></li>
-
-        </ul>
-
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-  <!-- menu -->
-  <div id="navbar" class="navbar navbar-default">
-    <div class="container">
-
-      <div class="navbr-header">
-        <!--  -->
-
-        <a href="accueil.html" style="height: 90px;padding: 0px 15px;" class="navbar-brand home">
-
-          <img src="Logo.png" style="max-width:220px;max-height:90px" alt="Logo">
-
-        </a>
-        <!--  menu search mode mobile -->
-        <button class="navbar-toggle" style="margin-top: 20px" data-toggle="collapse" data-target="#navigation">
-
-
-          <i class="fa fa-align-justify"></i>
-
-        </button>
-
-        <button class="navbar-toggle"style="margin-top: 20px" data-toggle="collapse" data-target="#search">
-
-
-          <i class="fa fa-search"></i>
-
-        </button>
-
-      </div>
-      <style type="text/css">
-
-
- @media (max-width: 991px){
-
-          .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {margin-left: 285px;}
-          .navbar>.container  .navbar-collapse >.padding-nav>.navbar-nav {margin-left: 85px} 
-
-           }
-
-@media (max-width: 767px){.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-    margin-left: 2px;
-}}
-
-
-
-
-      </style>
-      <div class="navbar-collapse collapse" id="navigation">
-        <div class="padding-nav">
-          <ul class="nav navbar-nav left" style="margin-top: 20px; margin-left: 30px">
-
-            <li class="active">
-              <a href="#">Accueil</a>
-            </li>
-            <li>
-              <a href="Produit.html">Nos produits</a>
-            </li>
-            <li>
-              <a href="#">Nos Services</a>
-            </li>
-            <li>
-              <a href="#">A propos</a>
-            </li>
-            <li>
-              <a href="#">Contactez nous</a>
-            </li>
-           
-
-          </ul>
-
-        </div>
-        <!-- search -->
-
-        <div class="navbar-collapse collapse right">
-
-          <button style="margin-top: 25px" class="btn btn-warning navbar-btn" type="button" data-toggle="collapse" data-target="#search">
-
-            <i class="fa fa-search"></i>
-
-          </button>
-
-        </div> 
-        <!-- search form -->
-        <div class="collapse clearfix" id="search">
-
-          <form method="get" action="results.php" class="navbar-form">
-
-            <div class="input-group">
-
-              <input type="text" class="form-control" placeholder="Search" name="user_query" required>
-
-              <span class="input-group-btn">
-
-                <button type="submit" name="search" value="Search" class="btn btn-warning">
-
-                  <i class="fa fa-search"></i>
-
-                </button>
-
-              </span>
-
-            </div>
-
-          </form>
-
-        </div>
-
-      </div>
-    </div>   
-  </div>
-
-
-
-
+<?php
+include("include/header.php");
+?>
   <!-- sidebar+slider -->
-  <div class="container-fluid" >
+  <div class="container-fluid" style="margin-top: 10px" >
     <!-- side bar -->
-    <div class="col-md-3 mb-4" id="sideBar">
+         <?php
+      include("include/sidebar.php");
+      ?>
 
-      <div class="row">
-
-
-        <div class="side-bar">
-
-          <div class="entete bg-info " style="padding:10px;background-color: #EC971F ; color: white; ">
-
-            <a class="" > 
-              <i class="fa fa-bars fa-lg "style="color: white;" ></i>  <span style="color: white;text-decoration: none;">Categories</span> 
-              <i style=" float: right;color: white" class="fa fa-chevron-down"></i>
-            </a>
-          </div>
-
-
-          <div class="contenu" id="collapseExample">
-            <div class="block-search input-group" style="margin-top: 15px;">
-              <input type="text" class="form-control" placeholder="filtrer...">
-              <a  class="input-group-addon" >
-                <i class="fa fa-search"></i>
-              </a>
-            </div>
-            <ul style=" text-decoration: none;" class="list-group"style="margin-top: 30px;">
-              <li class="list-group-item "><a style=" color: #ec971f;   text-decoration: none;" href="">Beauté du Visage</a></li>
-              <li class="list-group-item"><a style="  color: #ec971f;  text-decoration: none;" href="">Beaute de cheveaux</a></li>
-              <li class="list-group-item"><a style="  color: #ec971f;  text-decoration: none;" href="">Huiles alimentaire</a></li>
-              <li class="list-group-item"><a style="  color: #ec971f;  text-decoration: none;" href="">Beaute de cheveaux</a></li>
-              <li class="list-group-item"><a style="  color: #ec971f;  text-decoration: none;" href="">Les accessoires</a></li>
-              <li class="list-group-item"><a style="  color: #ec971f; text-decoration: none;" href="">Make up</a></li>
-              <li class="list-group-item"><a style="  color: #ec971f;  text-decoration: none;" href="">les produits naturels</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-    </div>
 
 
     <div class="col-md-1"><br></div>
@@ -261,73 +93,162 @@
   <h3 class="uk-heading-line uk-text-center"><span> Categories </span></h3>
   <div class="  uk-child-width-1-4@m uk-child-width-1-2@s " uk-grid style="margin-left:30px;margin-bottom: 10px">
     
-    <div style="margin-bottom: 0px;margin-right: -20px">
-       <div class="carduk uk-inline">
+    <div class="">
+      <center>  
+       <div class="carduk uk-inline ">
             <a href="#"><img src="images/visageA.jpg" alt=""></a>
             <div style="font-size: medium;padding: 7px 30px;background: rgba(236, 151, 31, 0.76);color:rgba(255,255,255);"  class="uk-overlay uk-overlay-primary uk-position-bottom">
                 <p>Beauté du Visage</p>
             </div>
         </div>
+      </center>
     </div>  
-    <div style="margin-bottom: 0px;margin-right: -20px">
+
+    <div class="">
+      <center>  
        <div class="carduk uk-inline">
             <a href="#"><img src="images/corps.jpg" alt=""></a>
             <div style="font-size: medium;padding: 7px 30px;background: rgba(236, 151, 31, 0.76);color:rgba(255,255,255);"  class="uk-overlay uk-overlay-primary uk-position-bottom">
                 <p>Beauté du corps</p>
             </div>
-        </div>
+        </div>  
+      </center> 
     </div >  
-    <div style="margin-bottom: 0px;margin-right: -20px">
+    <div class="">
+      <center>  
        <div class="carduk uk-inline">
             <a href="#"><img src="images/huileA.jpg" alt=""></a>
             <div style="font-size: medium;padding: 7px 30px;background: rgba(236, 151, 31, 0.76);color:rgba(255,255,255);"  class="uk-overlay uk-overlay-primary uk-position-bottom">
                 <p>Huiles alimentaire</p>
-            </div>
+            </div>  
         </div>
+        </center>
     </div>  
-    <div style="margin-bottom: 0px;margin-right: -20px">
+    <div class="">
+      <center>  
        <div class="carduk uk-inline">
             <a href="#"><img src="images/cheveaux (1).jpg" alt=""></a>
             <div style="font-size: medium;padding: 7px 30px;background: rgba(236, 151, 31, 0.76);color:rgba(255,255,255);"  class="uk-overlay uk-overlay-primary uk-position-bottom">
                 <p>beaute de cheveaux</p>
-            </div>
+            </div>  
         </div>
-    </div>  <div style="margin-bottom: 0px;margin-right: -20px">
+      </center>
+    </div>  
+
+    <div class="">
+      <center>  
        <div class="carduk uk-inline">
             <a href="#"><img src="images/food.jpg" alt=""></a>
             <div style="font-size: medium;padding: 7px 30px;background: rgba(236, 151, 31, 0.76);color:rgba(255,255,255);"  class="uk-overlay uk-overlay-primary uk-position-bottom">
                 <p>Super food</p>
             </div>
-        </div>
+        </div> 
+      </center> 
     </div>  
-     <div style="margin-bottom: 0px;margin-right: -20px">
+
+
+     <div class="">
+      <center>  
        <div class="carduk uk-inline">
             <a class="href"><img src="images/bijou.jpg" alt=""></a>
             <div style="font-size: medium;padding: 7px 30px;background: rgba(236, 151, 31, 0.76);color:rgba(255,255,255);"  class="uk-overlay uk-overlay-primary uk-position-bottom">
                 <p>Les accessoires</p>
             </div>
-        </div>
+        </div> 
+      </center> 
     </div>  
-    <div style="margin-bottom: 0px;margin-right: -20px">
+
+    <div class="">
+      <center>  
        <div class="carduk uk-inline">
             <a href="#"><img src="images/makeup.jpg" alt=""></a>
             <div style="font-size: medium;padding: 7px 30px;background: rgba(236, 151, 31, 0.76);color:rgba(255,255,255);"  class="uk-overlay uk-overlay-primary uk-position-bottom">
                 <p>Make up</p>
             </div>
-        </div>
+        </div> 
+      </center> 
     </div >  
-    <div style="margin-bottom: 0px;margin-right: -20px">
+    <div style="margin-bottom: 0px;margin-right: -20px"><center>  
        <div class="carduk uk-inline">
             <a href="#"><img src="images/visageA.jpg" alt=""></a>
             <div style="font-size: medium;padding: 7px 30px;background: rgba(236, 151, 31, 0.76);color:rgba(255,255,255);"  class="uk-overlay uk-overlay-primary uk-position-bottom">
                 <p>Beauté du Visage</p>
             </div>
         </div>
-    </div>   
+    </div> </center>  
   </div>
 
+<!-- Les services du site -->
+  <h3 class="uk-heading-line uk-text-center"><span> Nos Services </span></h3>
+  <div class="  uk-child-width-1-4@m uk-child-width-1-2@s " uk-grid style="margin-right: 30px; margin-bottom: 10px">
+      
+    <div class="card-flip" >
+      <center>  
+        <div class=" uk-inline card-flip " >
+          <div class="card-front">
+            <a href="#"><img src="images/soin.jpg" alt="" style="border-radius: 30px;width: 100%"></a>
+            <div style=""  class="uk-overlay uk-overlay-primary uk-position-bottom In_Service_Text">
+              <p>Massage</p>
+            </div>
+          </div> 
+          <div class="card-back" style=" color : white; width: 100%">
+           <p style="margin-top: 80px">Découvrez les meilleure adresse de massage sélectionnées à Marrakech. Le temps s’arrête, bye bye maux de dos, stress et noeuds musculaires, place à la relaxation !</p>
+          </div>
+        </div>  
+      </center>
+    </div>
 
+    <div class="card-flip" >
+      <center>  
+        <div class=" uk-inline card-flip " >
+          <div class="card-front">
+            <a href="#"><img src="images/spa.jpg" alt="" style="border-radius: 30px;width: 100%"></a>
+            <div style=""  class="uk-overlay uk-overlay-primary uk-position-bottom In_Service_Text">
+              <p>SPA</p>
+            </div>
+          </div>     
+          <div class="card-back" style="width: 100%">
+            <p style="margin-top: 80px">Votre escapade spa est une invitation à suspendre le cours du temps et à vous ressourcer pour un moment de relaxation intense. </p>
+          </div>
+        </div>  
+      </center>
+    </div>
 
+    <div class="card-flip" >
+      <center>  
+         <div class=" uk-inline card-flip " >
+          <div class="card-front">
+            <a href="#"><img src="images/soin (2).jpg" alt="" style="border-radius: 30px;width: 100%"></a>
+            <div style=""  class="uk-overlay uk-overlay-primary uk-position-bottom In_Service_Text">
+              <p>Soins</p>
+            </div>
+          </div>
+          <div class="card-back"  style="width: 100% ">
+            <p style="margin-top: 80px;">Accordez-vous toujours un moment pour prendre soin de vous. Chalo paradise  et un spas vous offrent de de produits pour vous faire vivre des expériences bien-être inédites ! Hammam, soins du visage, massages…</p>
+          </div>
+        </div>
+      </center>
+    </div>
+
+  
+    <div class="card-flip" >
+    <center>  
+      <div class=" uk-inline card-flip " >
+        <div class="card-front">
+          <a href="#"><img src="images/esthetique.jpg" alt="" style="border-radius: 30px;width: 100%"></a>
+          <div style=""  class="uk-overlay uk-overlay-primary uk-position-bottom In_Service_Text">
+            <p>Coifure et Esthetique</p>
+          </div>
+        </div>
+        
+        <div class="card-back" style="width: 100%">
+          <p style="margin-top: 80px">Accordez-vous un moment pour vous refaire une beauté à Chalo Paradise. Une escapade dans notre Salon vous permettra de mettre en valeur votre image et votre personnalité.</p>
+        </div>
+      </div>
+    </center>
+    </div>    
+  </div>      
+  </div>  
   <!-- Nouveautés  -->
   <h3 style ="margin-top: 30px;"class="uk-heading-line uk-text-center"><span> Nouveautés</span></h3>
   <div class="container-fluid" style="margin-bottom:25px;border:solid 1px #ec971f; border-top: 0px;">   
@@ -362,7 +283,7 @@
               
               <div>
                 <div class="col-md-12 "style=" margin-bottom: 10px ;">
-                  <button  class="uk-button  uk-button-warning"> <i style="margin-right: 10px"class="fa fa-shopping-cart "></i> Ajouter au panier  
+                  <button  class="uk-button  uk-button-warning js-cd-add-to-cart"> <i style="margin-right: 10px"class="fa fa-shopping-cart cd-add-to-cart  "></i> Ajouter au panier  
                   </button>
                 </div>
                 <div class=" col-md-12" style="margin-bottom: 10px ; ">
@@ -517,146 +438,57 @@
   <h3 class="uk-heading-line uk-text-center"><span> service client </span></h3>
   <div class="customer_support">
     <div class="container">
-      <div class="row">
-
-        <div class="col-xs-12 col-lg-4">
-          <div class="info"><i class="fa fa-hourglass"></i>
-            <div class="txt"><span class="txt1">Lun - Ven / 09:00 - 18:00</span> <span class="txt2"> Jours / heures de travail</span></div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-lg-4">
-          <div class="info"><i class=" fa fa-mobile "></i>
-            <div class="txt"><span class="txt1">05 22 97 65 42</span>  <span class="txt2">Allo Boutika</span></div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-lg-4">
-          <div class="info"><i class=" fa fa-envelope"></i>
-            <div class="txt"><span class="txt1">contact@boutika.ma</span> <span class="txt2">Contactez-nous par e-mail</span></div>
-          </div>
-        </div>
-
-      </div>
-    </div>
+    	<div class="row">
+	        <div class="col-xs-12 col-lg-4" style="margin-bottom: 40px;margin-top: 20px">         
+	        	<div class="info">
+		            <table width="100%"> 
+		            	<tr>  
+		              		<td align="right"><i style="font-size: 80px" class="fa fa-hourglass"></i>  </td>
+		              		<td> 
+				                <div class="txt">
+				                  <span class="txt1">Lun - Ven / 09:00 - 18:00</span> <span class="txt2"> Jours / heures de travail</span>
+				                </div>
+		              		</td>
+		            	</tr>
+		          	</table>
+	        	</div>
+	        </div>
+	        <div class="col-xs-12 col-lg-4 " style="margin-bottom: 40px;margin-top: 20px">
+	        	<div class="info" style="padding: 5px">
+	           		<table width="100%"> 
+	            		<tr>  
+	            			<td align="right"><i style="font-size: 120px" class="fa fa-mobile"></i>  </td>
+	            			<td> 
+		                		<div class="txt">
+		                  			<span class="txt1">05 22 97 65 42</span> <span class="txt2"> Allo Boutika</span>
+		                		</div>
+	              			</td>
+	            		</tr>
+	          		</table>
+	         	</div>
+	        </div>
+	        <div class="col-xs-12 col-lg-4" style="margin-bottom: 40px;margin-top:20px">
+	        	<div class="info">
+	            	<table width="100%"> 
+		             	<tr>  
+		            		<td align="right"><i style="font-size: 80px" class="fa fa-envelope"></i>  </td>
+		            		<td> 
+			                	<div class="txt">
+			                  		<span class="txt1">contact@boutika.ma</span> <span class="txt2"> Contactez-nous par e-mail</span>
+			                	</div>
+		              		</td>
+		            	</tr>
+	          		</table>
+	        	</div>
+	      	</div>
+    	</div>
+  	</div>
   </div>
-
 
   <!-- footer  -->
-  <div class="uk-card-secondary uk-padding uk-panel" id="contact" style="padding: 0px; ">
-    <!-- suivez-nous -->
-    <div class="uk-section"style="background-color:#ec971f;padding: 7px;" >
-      <div class="uk-container">
-        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
-
-          <div>             
-              <p style="text-transform: uppercase; color: #333;font-weight: 900;margin-top: 5px;"> Suivez-nous sur :</p>              
-          </div>
-          
-          <div  style="display: inline;">
-            <a href="#"><img src="icon/instagram (1).png"></a>
-            <a href="#"><img src="icon/facebook (1).png"></a>
-            <a href="#"><img src="icon/twitter.png"></a>
-            <a href="#"><img src="icon/linkedin.png"></a>
-            <a href="#"><img src="icon/whatsapp.png"></a>
-          </div>
-        
-        </div>
-      </div>
-    </div>
-    <!-- partie 2 -->
-    <div class="uk-section">
-      <div class="uk-container">
-        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
-          <div>
-            <img src="Logo.png" alt="logo" style="max-width:150px;max-height:100px">
-          </div>
-
-          <div>
-              <p>
-                 <strong>CHalo PARADISE</strong>, Boutique de produits cosmétiques, Institut de Beauté, Onglerie et Coiffure pour femmes, est en cours de construction.<br />
-                Vous souhaitez vous y rendre vous pouvez le faire ici  ou sur notre page <span ><a style="color: #ec971f;" href="https://www.facebook.com/Chalo-Paradis-162807951111923/"><strong>FACEBOOK</strong></a></span> <br />
-                <span  style="color: #ec971f;" ><strong>
-                Adresse</strong></span> <br>Sidi Abbad , av prince moulay Abdellah, boulevard almachaar alharam, 40000 Marrakech
-              </p>
-          </div>
-
-          <div>
-            <div class="box container-fluid" style="background: #333">
-              <p align="center">Inscrivez-vous sur newsletter</p>
-              
-              <div style="margin-right: 40px;">
-                <div class="col-md-10 col-sm-10 col-xs-10">
-                  <input type="email" class="form-control" id="colFormLabel" placeholder="email">
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                  <button type="submit" class="btn btn-warning ">Submit</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- partie 3 -->
-    <div class="uk-section">
-      <div class="uk-container">
-        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
-          <div>
-            <ul class="list-group">
-              <li style=" background-color: #333;" class="list-group-item ">
-                <a style=" color: #ec971f;   text-decoration: none;" href="">Beauté du Visage</a>
-              </li>
-              <li style=" background-color: #333;"class="list-group-item">
-                <a style="  color: #ec971f;  text-decoration: none;" href="">Beaute de cheveaux</a>
-              </li>
-              <li style=" background-color: #333;"class="list-group-item">
-                <a style="  color: #ec971f;  text-decoration: none;" href="">Huiles alimentaire</a>
-              </li>
-              <li style=" background-color: #333;"class="list-group-item">
-                <a style="  color: #ec971f;  text-decoration: none;" href="">Beaute de cheveaux</a>
-              </li>
-              <li style=" background-color: #333;"class="list-group-item">
-                <a style="  color: #ec971f;  text-decoration: none;" href="">Les accessoires</a>
-              </li>
-              <li style=" background-color: #333;"class="list-group-item">
-                <a style="  color: #ec971f; text-decoration: none;" href="">Make up</a>
-              </li>
-              <li style=" background-color: #333;"class="list-group-item">
-                <a style="  color: #ec971f;  text-decoration: none;" href="">les produits naturels</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <div class="mapouter">
-              <div class="gmap_canvas">
-                <iframe width="334" height="211" id="gmap_canvas" src="https://maps.google.com/maps?q=Beauty%20Centre%20Sister&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
-              </div>
-              <style>
-                .mapouter{position:relative;text-align:right;height:211px;width:334px;}.gmap_canvas {overflow:hidden;background:none!important;height:211px;width:334px;}
-              </style>
-            </div>
-          </div>
-
-          <div>
-            <ul class="uk-list uk-list-divider">
-                <li><a href="" uk-icon="icon: facebook"></a> Chalo Paradise</li>
-                <li><a href="" uk-icon="icon: instagram"></a> Chalo.Paradise</li>
-                <li><a href="" uk-icon="icon: whatsapp"></a> +212 0000000</li>
-            </ul>
-          </div>
-
-        </div>
-        
-      </div>
-    </div>
-
-    <div   class="uk-card uk-padding uk-panel" align="center" style="background-color:#ec971f;padding: 7px;">
-    copyright &copy; 2020: Chalo Paradise
-    </div>
-  </div>
-
+<?php
+include("include/footer.php");
+?>
 
 
 
