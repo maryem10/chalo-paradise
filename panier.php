@@ -119,10 +119,10 @@ input[type=reset]  {
 
 <div class="container" style="margin-top: 20px;">
 	<div class="col-md-9">
-		<div class="box ">
+		<div class="box">
 			<form action="panier.php" method="post">
 				<h1>Votre Panier</h1>
-				<div class="table-responsive">
+				<div class="table-responsive-lg">
 					<table class="table">
 						<thead>
 							<tr>

@@ -25,7 +25,6 @@
 
 </head>
 <style>
-  
 	body {
   font-family: 'open sans';
   overflow-x: hidden; }

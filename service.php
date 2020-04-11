@@ -94,10 +94,10 @@
           </div>
           <div class="swiper-slide">
             <div class="imgbx" style="height: inherit; overflow: hidden;">
-              <a href="#id2"><img src="images/coiffure.jpg" style="width: 100%; height: 100%"></a>
+              <a href="#id2"><img src="images/makeupArtist.jpeg" style="width: 100%; height: 100%"></a>
             </div>
             <div style="font-size: medium;padding: 7px 30px;background: rgba(236, 151, 31, 0.76);color:rgba(255,255,255);"  class="uk-overlay uk-overlay-primary uk-position-bottom">
-               <p>Coiffure</p>
+               <p>Maquillage</p>
             </div>  
           </div>
           <div class="swiper-slide">
@@ -105,7 +105,7 @@
               <a href="#id2"><img src="images/maqillage.jpg" style="width: 100%; height: 100%"></a>
             </div>
             <div style="font-size: medium;padding: 7px 30px;background: rgba(236, 151, 31, 0.76);color:rgba(255,255,255);"  class="uk-overlay uk-overlay-primary uk-position-bottom">
-               <p>Esthetique</p>
+               <p>Maqillage</p>
             </div>  
           </div>
           <div class="swiper-slide">
@@ -141,7 +141,7 @@
 
        
   </div>
-  <div class="container-fluid " style="background-color: white; margin-top: 10px;margin-bottom: 10px">
+<div class="container-fluid " style="background-color: white; margin-top: 10px;margin-bottom: 10px">
       
       <div id="id1" class="uk-section"style="background-color:#ec971f;padding: 20px;margin-right:-50px;margin-left: -50px; " >
         <div class="uk-container">
@@ -172,7 +172,7 @@
                   <div align="center">
                     <div class="col-md-1"></div>
                     <div class="col-md-5"style=" margin-bottom: 10px ;">
-                      <a href="reservation.php"><button  class="uk-button  uk-button-warning"> <i style="margin-right: 10px"class="fa fa-shopping-cart "></i> Reserver  
+                      <a href="#"><button  class="uk-button  uk-button-warning"> <i style="margin-right: 10px"class="fa fa-shopping-cart "></i> Reserver  
                       </button></a>
                     </div>
                     <div class=" col-md-5" style="margin-bottom: 10px ; ">
@@ -207,7 +207,7 @@
                   <div align="center">
                     <div class="col-md-1"></div>
                     <div class="col-md-5"style=" margin-bottom: 10px ;">
-                      <a href="reservation.php"><button  class="uk-button  uk-button-warning"> <i style="margin-right: 10px"class="fa fa-shopping-cart "></i> Reserver  
+                      <a href="#"><button  class="uk-button  uk-button-warning"> <i style="margin-right: 10px"class="fa fa-shopping-cart "></i> Reserver  
                       </button></a>
                     </div>
                     <div class=" col-md-5" style="margin-bottom: 10px ; ">
@@ -255,7 +255,7 @@
                   <div align="center">
                     <div class="col-md-1"></div>
                     <div class="col-md-5"style=" margin-bottom: 10px ;">
-                      <a href="reservation.php"><button  class="uk-button  uk-button-warning"> <i style="margin-right: 10px"class="fa fa-shopping-cart "></i> Reserver  
+                      <a href="#"><button  class="uk-button  uk-button-warning"> <i style="margin-right: 10px"class="fa fa-shopping-cart "></i> Reserver  
                       </button></a>
                     </div>
                     <div class=" col-md-5" style="margin-bottom: 10px ; ">
@@ -290,7 +290,7 @@
                   <div align="center">
                     <div class="col-md-1"></div>
                     <div class="col-md-5"style=" margin-bottom: 10px ;">
-                      <a href="reservation.php"><button  class="uk-button  uk-button-warning"> <i style="margin-right: 10px"class="fa fa-shopping-cart "></i> Reserver  
+                      <a href="#"><button  class="uk-button  uk-button-warning"> <i style="margin-right: 10px"class="fa fa-shopping-cart "></i> Reserver  
                       </button></a>
                     </div>
                     <div class=" col-md-5" style="margin-bottom: 10px ; ">
@@ -308,38 +308,7 @@
   
   </div>
   
-  <!-- tarifs -->
-  <div class="container-fluid" style="margin-bottom: 10px;margin-top: 20px">
-    <div id="id1" class="uk-section"style="background-color:#ec971f;padding: 20px;margin-right:-50px;margin-left: -50px; " >
-        <div class="uk-container">
-          <div class="uk-grid-match uk-child-width-1-1@m " uk-grid>
 
-            <div>             
-                <p style="text-transform: uppercase; color: white;font-size: large;font-weight: bold;text-align: center;vertical-align: middle;"> Nos Tarifs  </p>              
-            </div>
-            
-          
-          </div>
-        </div>
-    </div>
-    
-
-    <div class="row">
-      <div class="container-fluid">
-        <div class="row">
-
-          <div class="col-md-6">
-              
-          </div>
-          <div class="col-md-6" style="height: 900px;background-image: url(images/img1);">
-            
-          </div>           
-        </div>
-      </div>
-    </div>
-  </div>
-
-  </div>
     <!-- footer  -->
   <?php
   include("include/footer.php");
